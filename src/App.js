@@ -6,7 +6,7 @@ function App() {
   const [selectNumbers, setSelectNumbers] = useState(1); //Use default value 1
   const [valueOfInput, setValueOfInput] = useState("");
   const [thingsPacked, setThingsPacked] = useState([]);
-  const [sortBy, setSortBy] = useState("");
+  const [sortBy, setSortBy] = useState(" ");
 
   useEffect(() => {
     if (todoList.length > 0) {
@@ -157,9 +157,9 @@ function App() {
       <div className="bottomBtnDiv">
         <div className="setOrderDiv">
           <select value={sortBy}  onChange={sortChangingHandler}>
-            <option value='sort by input order'>sort by input order</option>
-            <option value='sort by Description'>sort by Description</option>
-            <option value='sort by Packed Status'>sort by Packed Status</option>
+            <option value='Sort By input order'>sort by input order</option>
+            <option value='Sort By Description'>Sort by Description</option>
+            <option value='Sort by Packed Status'>sort by Packed Status</option>
           </select>
           <button onClick={clearListHandler}>Clear List</button>
         </div>
