@@ -1,38 +1,126 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #26577C;
+}
+
+.header {
   text-align: center;
+  background-color: #EBE4D1;
+  padding: 30px 70px;
+  font-size: xx-large;
+  font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.subHeader {
+  text-align: center;
+  background-color: #82A0D8;
+  font-size: large;
+  padding: 15px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.selectOfSubheader {
+  margin: 0px 8px 0px 15px;
+  border-radius: 15px;
+  padding: 5px 15px;
+  background-color: #EADBC8;
+  border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.selectOfSubheader option {
+  color: black;
+  background-color: rgba(70, 56, 56, 0.7);
+  margin: 10px 20px;
+  border-radius: 5px;
+}
+
+.subHeaderInput {
+  margin: 0 7px;
+  padding: 6px 16px;
+  border-radius: 15px;
+  background-color: #EADBC8;
+  border: none;
+}
+
+.subHeaderbtn {
+  margin: 0 7px;
+  padding: 7px 16px;
+  border-radius: 10px;
+  background-color: #EADBC8;
+  border: none;
+}
+
+.subHeaderbtn:hover {
+  background-color: #EFB495;
+  
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 90px;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 9px 18px;
+}
+
+.mainContainer span {
+  margin: 8px 11px;
+  color: #fde7aa;
+}
+
+.sharp-x {
+  color: rgb(228, 156, 156);
+}
+
+.bottomBtnDiv {
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 100vw;
+}
+
+.setOrderDiv select {
+  margin: 0 5px;
+  border-radius: 10px;
+  padding: 5px 15px;
+  background-color: #fde7aa;
+  border: none;
+}
+
+.setOrderDiv button {
+  margin: 0 5px;
+  border-radius: 10px;
+  padding: 5px 15px;
+  background-color: #fde7aa;
+  border: none;
+}
+
+.setOrderDiv select option {
   color: white;
+  background-color: rgba(0, 0, 0, 70%);
+  margin: 10px 20px;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.setOrderDiv {
+  margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.footer {
+  background-color: #FFCF9D;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
