@@ -58,11 +58,11 @@ function App() {
 
    // Function to sort the list by  description
   const sortingByDescription = () => {
-     const sortedList = [...todoList].sort((x , y) => {
-        const valueOfX = x.text.split(' ').slice(1).join(' ');
-        const valueOfY = y.text.split(' ').slice(1).join(' ');
-        return valueOfX.localeComapare(valueOfY);
-     });
+    const sortedList = [...todoList].sort((x , y) => {
+      const keywordX = x.text.split(' ').slice(1).join(' ');
+      const keywordY = y.text.split(' ').slice(1).join(' ');
+      return keywordX.localeCompare(keywordY);
+    });
      setTodoList(sortedList);
      setSortBy('Sort By Description');
   };
@@ -84,7 +84,7 @@ function App() {
 
   const sortChangingHandler = (e) => {
     const specificSort = e.target.value;
-    if (specificSort === 'Sort By Packed Status') {
+    if (specificSort === 'Sort by Packed Status') {
       sortingByPackedStatus();
     }else if (specificSort === 'Sort By input order') {
       sortingByInputOrder();
